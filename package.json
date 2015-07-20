@@ -1,0 +1,35 @@
+{
+  "name": "is-cr2",
+  "version": "0.0.0",
+  "description": "Check if a Buffer/Uint8Array is a CR2 file.",
+  "license": "MIT",
+  "repository": "gillstrom/is-cr2",
+  "author": {
+    "email": "andreasgillstrom@gmail.com",
+    "name": "Andreas Gillström",
+    "url": "github.com/gillstrom"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "node test/test.js"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "buffer",
+    "check",
+    "CR2",
+    "detect",
+    "raw",
+    "test",
+    "type",
+    "uint8array"
+  ],
+  "devDependencies": {
+    "ava": "^0.0.4",
+    "read-chunk": "^1.0.1"
+  }
+}
