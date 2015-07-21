@@ -4,5 +4,5 @@ module.exports = function (buf) {
 		return false;
 	}
 
-	return (buf[8] === 0x43 && buf[9] === 0x52) && (buf[10] === 0x02 || buf[10] === 0x00);
+	return buf[8] === 0x43 && buf[9] === 0x52;
 };
