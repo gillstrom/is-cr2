@@ -1,6 +1,6 @@
 {
   "name": "is-cr2",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Check if a Buffer/Uint8Array is a CR2 file.",
   "license": "MIT",
   "repository": "gillstrom/is-cr2",
