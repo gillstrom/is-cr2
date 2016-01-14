@@ -1,14 +1,14 @@
-'use strict';
-var path = require('path');
-var readChunk = require('read-chunk');
-var test = require('ava');
-var isCr2 = require('../');
+import path from 'path';
+import readChunk from 'read-chunk';
+import test from 'ava';
+import m from '../';
 
-test(function (t) {
+test.cb(t => {
 	t.plan(2);
 
-	readChunk(path.join(__dirname, 'fixtures/test.CR2'), 0, 10, function (err, buf) {
-		t.assert(!err, err);
-		t.assert(isCr2(buf));
+	readChunk(path.join(__dirname, 'fixtures/test.CR2'), 0, 10, (err, buf) => {
+		t.true(!err, err);
+		t.true(m(buf));
+		t.end();
 	});
 });
