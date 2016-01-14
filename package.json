@@ -13,7 +13,7 @@
     "node": ">=0.10.0"
   },
   "scripts": {
-    "test": "ava test/test.js"
+    "test": "xo && ava test/test.js"
   },
   "files": [
     "index.js"
@@ -32,6 +32,7 @@
   ],
   "devDependencies": {
     "ava": "*",
-    "read-chunk": "^1.0.1"
+    "read-chunk": "^1.0.1",
+    "xo": "*"
   }
 }
